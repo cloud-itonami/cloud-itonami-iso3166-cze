@@ -1,0 +1,23 @@
+;; data/datascript-tx.edn — DataScript tx-data derived from src/statute/facts.cljc
+;; `statute.facts/catalog` (ADR-2607141700 Wave 0). Same shape as sibling files.
+
+[#:statute{:id "cze.act-90-2012-business-corporations-act"
+           :title "Zákon o obchodních korporacích (Business Corporations Act)"
+           :jurisdiction "CZE"
+           :kind :law
+           :law-number "90/2012 Sb."
+           :url "https://msp.gov.cz/en/web/vrchni-soud-v-praze/ruzne/-/clanek/zakon-o-obchodnich-korporacich-zakon-c-90_2012-sb"
+           :url-provenance :official-msp-gov-cz
+           :enacted-date "2012-01-25"
+           :retrieved-at "2026-07-17"
+           :topic [:corporate-governance :incorporation]}
+ #:statute{:id "cze.act-110-2019-personal-data-processing-act"
+           :title "Zákon o zpracování osobních údajů (Personal Data Processing Act)"
+           :jurisdiction "CZE"
+           :kind :law
+           :law-number "110/2019 Sb."
+           :url "https://uoou.gov.cz/en/legislation/act-no-1102019-coll"
+           :url-provenance :official-uoou-gov-cz
+           :enacted-date "2019-03-12"
+           :retrieved-at "2026-07-17"
+           :topic [:data-protection :privacy]}]
