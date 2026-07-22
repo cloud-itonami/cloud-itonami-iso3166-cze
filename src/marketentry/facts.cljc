@@ -1,4 +1,13 @@
-(ns marketentry.facts "Czech Republic market-entry catalog.")
+(ns marketentry.facts
+  "Czech Republic (CZE) market-entry catalog.
+
+  Scoped to CZE only. Prior revisions of this catalog carried unlabeled
+  USA/DEU/POL entries byte-identical to boilerplate entries in unrelated
+  sibling repos -- no README/docs in this repo ever documented a
+  deliberate comparative-jurisdiction design, so this was scaffold-copy
+  contamination, not intent. Removed 2026-07-23; extend `catalog` with a
+  new jurisdiction only behind its own primary-source citation, never by
+  re-copying another repo's entry verbatim.")
 (def catalog
   {"CZE" {:name "Czech Republic"
           :owner-authority "MMR / NEN (Národní elektronický nástroj)"
@@ -11,13 +20,7 @@
           :rep-provenance "https://nen.nipez.cz/"
           :corporate-number-owner-authority "ČSÚ / Justice OR"
           :corporate-number-legal-basis "IČO"
-          :corporate-number-provenance "https://or.justice.cz/"}
-   "USA" {:name "United States" :owner-authority "GSA/SAM.gov" :legal-basis "FAR" :national-spec "SAM.gov" :provenance "https://sam.gov/"
-          :required-evidence ["EIN record" "SAM.gov registration record" "State business registration record" "SAM UEI verification record"]}
-   "DEU" {:name "Germany" :owner-authority "e-Vergabe" :legal-basis "GWB/VgV" :national-spec "e-Vergabe" :provenance "https://www.evergabe-online.de/"
-          :required-evidence ["Handelsregister extract" "e-Vergabe registration record" "USt-IdNr record" "Authorized-representative record"]}
-   "POL" {:name "Poland" :owner-authority "e-Zamówienia" :legal-basis "PZP" :national-spec "e-Zamówienia" :provenance "https://ezamowienia.gov.pl/"
-          :required-evidence ["NIP/KRS record" "e-Zamówienia registration" "CEIDG/KRS extract" "Authorized-representative record"]}})
+          :corporate-number-provenance "https://or.justice.cz/"}})
 
 (defn spec-basis [iso3] (get catalog iso3))
 (defn coverage
