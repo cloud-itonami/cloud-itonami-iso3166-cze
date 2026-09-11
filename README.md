@@ -3,7 +3,7 @@
 **`:implemented`** for **CZE**. Flagship `eu-establishment-missing`, tax `ico-unverified`.
 
 ```
-clojure -M:dev:test
+kbb -M:dev:test
 ```
 
 AGPL-3.0-or-later.
